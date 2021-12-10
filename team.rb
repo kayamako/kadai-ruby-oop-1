@@ -14,21 +14,21 @@ class Team
   end
   
   def show_ream_result
-    puts "#{self.name}の2020年の成績は#{self.win}勝#{self.lose}敗#{self.draw}分、勝率は#{calc_win_rate()}です。"
+    puts "#{self.name}の2020年の成績は#{self.win}勝#{self.lose}敗#{self.draw}分、勝率は#{self.calc_win_rate()}です。"
   end
   
 end
 
-team_1 = Team.new("Giants", 67, 45, 8)
-team_2 = Team.new("Tigers", 60, 53, 7)
-team_3 = Team.new("Dragons", 60, 55, 5)
-team_4 = Team.new("BayStars", 56, 58, 6)
-team_5 = Team.new("Carp", 52, 56, 12)
-team_6 = Team.new("Swallows", 41, 69, 10)
+giants = Team.new("Giants", 67, 45, 8)
+tigers = Team.new("Tigers", 60, 53, 7)
+dragons = Team.new("Dragons", 60, 55, 5)
+baystars = Team.new("BayStars", 56, 58, 6)
+carp = Team.new("Carp", 52, 56, 12)
+swallows = Team.new("Swallows", 41, 69, 10)
 
-team_1.show_ream_result()
-team_2.show_ream_result()
-team_3.show_ream_result()
-team_4.show_ream_result()
-team_5.show_ream_result()
-team_6.show_ream_result()
+giants.show_ream_result()
+tigers.show_ream_result()
+dragons.show_ream_result()
+baystars.show_ream_result()
+carp.show_ream_result()
+swallows.show_ream_result()
